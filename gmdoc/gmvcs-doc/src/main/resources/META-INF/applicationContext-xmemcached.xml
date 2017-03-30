@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- # memcachedClientBuilder failureMode=false 是否启用failure模式，true为启用，默认不启用。所谓failure模式是指， 
+		#connectionPoolSize=1 nio连接池大小,默认对一个memcached节点只有一个连接，这在通常情况 下已经有非常优异的表现。但是在典型的高并发环境下,nio的单连接也会遇到性能瓶颈。可通过调整 
+		连接池数量,允许建立多个连接到同一个memcached节点，但是请注意，这些连接之间是不同步的， 因此你的应用需要自己保证数据更新的同步 -->
+	<bean id="memcachedClientBuilder" class="net.rubyeye.xmemcached.XMemcachedClientBuilder"
+		p:connectionPoolSize="${memcached.connectionPoolSize}" p:failureMode="${memcached.failureMode}">
+		<!-- XMemcachedClientBuilder have two arguments.First is server list,and 
+			second is weights array. -->
+		<!-- # 服务器节点:形如："主节点1:port,备份节点1:port 主节点2:port,备份节点2:port"的字符串， #可以不设置备份节点，主备节点逗号隔开，不同分组空格隔开 
+			#由于该应用功能是加载数据，可以只考虑分布式，即以空格分隔ip的配置方式，不考虑主备关系 -->
+		<constructor-arg>
+			<list>
+				<bean class="java.net.InetSocketAddress">
+					<constructor-arg>
+						<value>${memcached.server1.host}</value>
+					</constructor-arg>
+					<constructor-arg>
+						<value>${memcached.server1.port}</value>
+					</constructor-arg>
+				</bean>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>${memcached.server1.weight}</value>
+			</list>
+		</constructor-arg>
+		<!-- (1) 协议工厂 net.rubyeye.xmemcached.command.BinaryCommandFactory(二进制) 
+			(2) 协议工厂 net.rubyeye.xmemcached.command.TextCommandFactory(文本) (3) 协议工厂 net.rubyeye.xmemcached.command.KestrelCommandFactory(可靠获取) -->
+		<property name="commandFactory">
+			<bean class="net.rubyeye.xmemcached.command.BinaryCommandFactory" />
+		</property>
+		<property name="sessionLocator">
+			<!-- (1) net.rubyeye.xmemcached.impl.KetamaMemcachedSessionLocator 分布策略，一致性哈希（用于增加主机时降低未命中率问题的解决） 
+				(2) ArrayMemcachedSessionLocator(默认) ,默认分布的策略是按照key的哈希值模以连接数得到的余数，对应的连接就是将要存储的节点, 
+				本应用只需使用默认策略即可。 -->
+			<bean class="net.rubyeye.xmemcached.impl.KetamaMemcachedSessionLocator" />
+		</property>
+		<!-- 序列转换器，默认使用net.rubyeye.xmemcached.transcoders.SerializingTranscoder -->
+		<property name="transcoder">
+			<bean class="net.rubyeye.xmemcached.transcoders.SerializingTranscoder" />
+		</property>
+	</bean>
+	<!-- Use factory bean to build memcached client -->
+	<bean id="memcachedClient" factory-bean="memcachedClientBuilder"
+		factory-method="build" destroy-method="shutdown" />
+</beans>

@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'microsoft yahei',Arial,sans-serif;
+	font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    line-height: 20px;
+    text-align: center;
+	background-color: #DAEFF9;
+	
+	min-height: 795px;
+	min-width: 1440px;
+	
+	height: 100%;
+	width: 100%;
+	
+	position: relative;
+}
+
+.main_container{
+	width: 1440px;
+	height: 633px;
+	margin: 0 auto;
+	background-image: url("../images/main_bg.png");
+}
+
+.login_title{
+	background-image: url("../images/login_title.png");
+	width: 675px;
+	height: 37px;
+	margin: 115px auto;
+}
+
+.login_u{
+	background-image: url("../images/login_u.png");
+	width: 153px;
+	height: 20px;
+	margin: 0px auto 22px;
+}
+
+.input_user{
+	/*background-image: url("../images/edit_user.png");*/
+	width: 240px;
+	margin: 0px auto;
+}
+
+.input_pwd{
+	/*background-image: url("../images/edit_pwd.png");*/
+	width: 239px;
+	margin: 5px auto;
+}
+
+.btn_sub{
+	width: 239px;
+	height: 37px;
+	margin: 15px auto;
+}
+
+.lab_concact{
+	width: 239px;
+	height: 37px;
+	margin: 5px auto;
+}
+
+.main_footer{
+	background-image: url("../images/right_bg.png");
+	height: 160px;
+	width: 100%;
+	background-repeat: repeat-x;
+	
+	position: relative;
+}
+
+.login_right{
+	padding-top: 30px;
+	height: 100px;
+}
+
+body.min .main_footer{position: relative;}

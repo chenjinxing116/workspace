@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.img_title{
+    margin: 150px 0 75px;
+}
+
+.img_title img{
+    margin: 0 auto;
+}
+
+.h-center{
+    margin: 0 auto;
+}
+
+.marigin-bottom{
+    margin-bottom: 10px;
+}
+
+.lab_concact{
+    width:100%;
+    text-align: right;
+}
+
+.lab_concact label{
+    color: #00CCFF;
+    width: 239px;
+    font-size: 12px;
+    display: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -170px;
+}
+
+.push {
+    height: 150px;
+}
+
+.footer{
+    height: 150px;
+    width:100%;
+    margin-top: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-top: 5px solid #d33a3a;
+}
+
+.footer label{
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    width: 100%;
+    color: #9d9d9d;
+    font-size: 13px;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+.ztree *{
+	font-family:Microsoft Yahei;
+}
+.ztree li a{
+	color:#666;
+}
+.ztree li{
+	line-height:25px;
+}
+.ztree li span.button{
+	margin-top:5px;
+}
+.ztree li a.curSelectedNode{
+	background-color: #fff;
+	border:solid 1px #fff;
+	opacity:0.8;
+	color:#0077ea;
+}
+.ztree li span.button.center_open{
+	background-position: -92px -20px;
+}
+.ztree li span.button.bottom_close {
+    background-position: -74px -39px;
+}
+.ztree li span.button.bottom_open {
+    background-position: -92px -39px;
+}
+.ztree li span.button.center_close {
+    background-position: -74px -20px;
+}
+
+.ztree-org li span.button.ico_close {
+	margin-right: 2px;
+	background: url(../images/node_polices.png) no-repeat scroll ;
+	vertical-align:top; 
+}
+
+.ztree-org li span.button.ico_open {
+	margin-right: 2px;
+	background: url(../images/node_polices.png) no-repeat scroll ;
+	vertical-align:top; 
+}
+
+.ztree-org li span.button.ico_docu {
+	margin-right: 2px;
+	background: url(../images/node_police.png) no-repeat scroll ;
+	vertical-align:top; 
+}
