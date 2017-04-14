@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			body{
+				background-color: red;
+			}
+			
+			.overlay{
+				position: absolute;
+			    top: 0; left:0;right:0;bottom: 0;
+				background-color: rgba(0, 0, 0, 0.3);
+				/*filter:Alpha(opacity=30);*/
+			    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#3F000000,endcolorstr=#3F000000);
+			    overflow:hidden;
+			    z-index: 9999;
+			}
+			
+			.conainer{
+				width: 100px;
+				padding: 20px;
+				background-color: #FFF;
+				margin: 500px auto;
+				border: 1px solid;
+				border-radius: 16px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="overlay">
+			<div class="conainer">
+				<img src="loading.gif" alt="" />
+			</div>
+			<p>拉丝机跌幅来看世界里sad路附近拉萨的房价了</p>
+		</div>
+		
+	</body>
+</html>

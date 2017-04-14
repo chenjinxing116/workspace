@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" value="请输入密码" />
+		<input type="password" />
+		
+		<script src="../jquery/jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('input[type=text]').focus(function(){
+				$(this).hide().next().show().focus();
+				
+			}).blur(function(){
+				
+			});
+			
+			$('input[type=password]').blur(function(){
+				if(this.value.length === 0){
+					$(this).hide().prev().show();
+				}
+			});
+		</script>
+	</body>
+</html>

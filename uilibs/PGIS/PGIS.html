@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" charset="utf-8" >
+	    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=EDGE;chrome=1" />
+	    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../gxxplayer/css/font-awesome.min.css"/>
+		<style type="text/css">
+			body, html,#allmap {
+				width: 100%;height: 100%;
+				overflow: hidden;
+				margin:0;
+				font-family:"微软雅黑";
+			}
+			
+			#divPaint > img[src='ic_police1_0.png'] + div{
+				width: 120px !important;
+			}		
+		</style>
+		
+		<script type="text/javascript" charset="GB2312" src="http://10.167.2.134:80/PGIS_S_TileMap/js/EzMapAPI.js"></script>
+	</head>
+	<body>
+		<div id="allmap"></div>
+	</body>
+	
+	<script type="text/javascript">
+		function getI18NStr(key) {
+			return parent.getI18NStr(key);
+		}
+	</script>
+	
+	<script src="jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="PGIS.js" type="text/javascript" charset="utf-8"></script>	
+</html>

@@ -1,0 +1,83 @@
+div.overlay button{
+    padding: 10px 13px;
+    background:#337ab7;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    outline:none;
+    margin-left: 5px;
+}
+div.overlay button:hover{
+    background: #286090;
+}
+
+div.overlay{
+    position: absolute;
+    top: 0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+    overflow:auto;
+    z-index: 9999;
+}
+.overlay .dialog{
+    position: absolute;
+    top:50%;left:50%;
+    padding: 10px;
+    width:300px;
+    height:200px;
+    background:#FFF;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 8px;
+    word-break:break-word;   
+}
+
+.overlay div{
+    /* border:1px solid; */
+}
+
+.dialog .dialog-head{
+    height:40px;
+}
+.dialog-head > h3{
+	margin: 0;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 20px;
+}
+.dialog-head > hr{
+	margin-top: 10px;
+    height: 0px;
+}
+
+.dialog .dialog-footer{
+    position: absolute;
+    right:10px;bottom:10px;
+    height: 40px;
+}
+.dialog .dialog-content{
+    text-align:center;
+    position:absolute;
+    top:40px;left:10px;right:10px;bottom:50px;
+    padding: 20px;
+    
+}
+.dialog .dialog-footer button:not(:last-child){
+    margin-right: 5px;
+}
+.dialog .dialog-content>i{
+    float:left;
+}
+.dialog i.fa-info-circle{
+    color: #5bc0de;
+}
+.dialog i.fa-times-circle{
+    color: #d9534f;
+}
+.dialog i.fa-exclamation-triangle{
+    color:#f0ad4e;
+}
+.dialog i.fa-question-circle{
+    color: #337ab7;
+}

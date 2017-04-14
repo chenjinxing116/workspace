@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../uilibs/bootstrap-3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../uilibs/zTree_v3/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../common/css/tree.css"/>
+		
+	</head>
+	<body>
+		<noscript>
+			<p>javascript</p>
+		</noscript>
+		<div id="treeContainer" style="position: relative;width: 240px;">
+		</div>
+		
+		<button id="btnGetTime" class="btn btn-primary">初始化下拉框</button>
+		<button id="btnGetId" class="btn btn-primary">getID</button>
+		<button id="btnGetIds" class="btn btn-primary">getIDs</button>
+		
+		<script src="../../uilibs/es5shim/es5-shim.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../uilibs/jquery/jquery-1.12.1.min.js"></script>
+		<script src="../../uilibs/zTree_v3/js/jquery.ztree.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-orgSelector.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			/*var setting = {
+				view: {
+					dblClickExpand: false
+				},
+				data: {
+					simpleData: {
+						enable: true
+					}
+				},
+				callback: {
+					beforeClick: beforeClick,
+					onClick: onClick
+				}
+			};*/
+	
+			/*var zNodes ={
+				children: [
+					{
+						children: [
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1110001
+									},{
+										name: '警员2',
+										orgId: 1110002
+									},{
+										name: '警员3',
+										orgId: 1110003
+									},{
+										name: '警员4',
+										orgId: 1110004
+									},{
+										name: '警员5',
+										orgId: 1110005
+									}
+								],
+								name: '第一小队',
+								orgId: '111'
+							},
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1120001
+									},{
+										name: '警员2',
+										orgId: 1120002
+									},{
+										name: '警员3',
+										orgId: 1120003
+									},{
+										name: '警员4',
+										orgId: 1120004
+									},{
+										name: '警员5',
+										orgId: 1120005
+									}
+								],
+								name: '第二小队',
+								orgId: '112'
+							},
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1130001
+									},{
+										name: '警员2',
+										orgId: 1130002
+									},{
+										name: '警员3',
+										orgId: 1130003
+									},{
+										name: '警员4',
+										orgId: 1130004
+									},{
+										name: '警员5',
+										orgId: 1130005
+									}
+								],
+								name: '第三小队',
+								orgId: '113'
+							}
+						],
+						name: '第一大队',
+						orgId: 12
+					},
+					{
+						children: [
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1210001
+									},{
+										name: '警员2',
+										orgId: 1210002
+									},{
+										name: '警员3',
+										orgId: 1210003
+									},{
+										name: '警员4',
+										orgId: 1210004
+									},{
+										name: '警员5',
+										orgId: 1210005
+									}
+								],
+								name: '第一小队',
+								orgId: '121'
+							},
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1220001
+									},{
+										name: '警员2',
+										orgId: 1220002
+									},{
+										name: '警员3',
+										orgId: 1220003
+									},{
+										name: '警员4',
+										orgId: 1220004
+									},{
+										name: '警员5',
+										orgId: 1220005
+									}
+								],
+								name: '第二小队',
+								orgId: '122'
+							},
+							{
+								children: [
+									{
+										name: '警员1',
+										orgId: 1230001
+									},{
+										name: '警员2',
+										orgId: 1230002
+									},{
+										name: '警员3',
+										orgId: 1230003
+									},{
+										name: '警员4',
+										orgId: 1230004
+									},{
+										name: '警员5',
+										orgId: 1230005
+									}
+								],
+								name: '第三小队',
+								orgId: '123'
+							}
+						],
+						name: '第二大队',
+						orgId: 12
+					}
+				],
+				name: '第一支队',
+				orgId: 1
+			};*/
+			
+			
+	
+			/*function beforeClick(treeId, treeNode) {
+				return true;
+			}
+			
+			function onClick(e, treeId, treeNode) {
+				var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+				nodes = zTree.getSelectedNodes(),
+				v = "";
+				nodes.sort(function compare(a,b){return a.id-b.id;});
+				for (var i=0, l=nodes.length; i<l; i++) {
+					v += nodes[i].name + ",";
+				}
+				if (v.length > 0 ) v = v.substring(0, v.length-1);
+				var cityObj = $("#dropDowninput");
+				cityObj.attr("value", v);
+				
+				hideMenu();
+			}
+	
+			function showMenu() {
+				//var cityObj    = $("#dropDowninput");
+				//var cityOffset = $("#dropDowninput").offset();
+				//$("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+	
+				$("#menuContent").slideDown('fast');
+				$("body").bind("mousedown", onBodyDown);
+			}
+			function hideMenu() {
+				$("#menuContent").fadeOut("fast");
+				$("body").unbind("mousedown", onBodyDown);
+			}
+			function onBodyDown(event) {
+				if (!(event.target.id == "menuBtn" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length>0)) {
+					hideMenu();
+				}
+			}*/
+	
+			$(document).ready(function(){
+				var zNodes ={display:'第一支队', orgId:'1'};
+				zNodes.children = [];
+				for(var i=0; i<10; ++i){
+					zNodes.children[i] = {};
+					zNodes.children[i].display  = "第"+ i +"大队";
+					zNodes.children[i].orgId = "" + 1 + i; 
+					zNodes.children[i].children = [];
+					for(var j=0;j<10; ++j){
+						zNodes.children[i].children[j] = {};
+						zNodes.children[i].children[j].display  = "第"+ j +"中队";
+						zNodes.children[i].children[j].orgId = "" + 1 + i + j; 
+						zNodes.children[i].children[j].children = [];
+						for(var k=0; k<10; ++k){
+							zNodes.children[i].children[j].children[k] = {};
+							zNodes.children[i].children[j].children[k].display  = "第"+ k +"小队";
+							zNodes.children[i].children[j].children[k].orgId = "" + 1 + i + j + k;
+							zNodes.children[i].children[j].children[k].children = [];
+							for(var l=0; l<100; ++l){
+								zNodes.children[i].children[j].children[k].children[l] = {};
+								zNodes.children[i].children[j].children[k].children[l].display  = "警员" + l;
+								zNodes.children[i].children[j].children[k].children[l].orgId = "" + 1 + i + j + k + l;
+							}
+						}
+					}
+				}
+				
+				$("#btnGetId").click(function(){
+					var selOrg = $("#treeContainer").data('selOrg');
+					alert(selOrg.name + selOrg.orgId);
+				});
+				
+				$("#btnGetTime").click(function(){
+					var time1 = new Date();
+
+					//$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+					$('#treeContainer').gmOrgSelector({
+						'chkStyle':   '',
+						'chkboxType': {"Y":"ps", "N":"ps"},
+						'children':   'children',
+						'name':	      'display'
+					}, zNodes);
+					
+					var time2 = new Date();
+		
+					alert("初始化 zTree 共耗时: " + (time2.getTime() - time1.getTime()) + " ms");
+				});
+				
+				$("#btnGetIds").click(function(){
+					var selOrg = $("#treeContainer").data('selOrg');
+					if(window.console){
+						console.log(selOrg);
+					}
+					else{
+						alert(selOrg);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

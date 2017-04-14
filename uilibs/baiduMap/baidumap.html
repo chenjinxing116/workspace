@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="content-type" charset="utf-8" >
+	    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=EDGE;chrome=1" />
+	    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../gxxplayer/css/font-awesome.min.css"/>
+		<style type="text/css">
+			body, html,#allmap {
+				width: 100%;height: 100%;
+				overflow: hidden;
+				margin:0;
+				font-family:"微软雅黑";
+			}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DyKna0bWQQzFFWrhgdyFVIQA"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+	</head>
+	<body>
+		<div id="allmap"></div>
+	</body>
+	
+	<script type="text/javascript">
+		function getI18NStr(key) {
+			return parent.getI18NStr(key);
+		}
+	</script>
+	
+	<script src="../GPSTransform/GPS.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./RichMarker_min.js"></script>
+	<script src="../jquery/jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../gmDialog/jquery.dialog.js" type="text/javascript" charset="utf-8"></script>
+	<script src="baiduMap.js" type="text/javascript" charset="utf-8"></script>	
+</html>
