@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gmvcsomm:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gmvcsomm.war">
+      <element id="artifact" artifact-name="gmvcsomm:war exploded" />
+    </root>
+  </artifact>
+</component>

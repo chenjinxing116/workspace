@@ -1,0 +1,151 @@
+* {
+	/*padding:0px;
+    margin:0px;*/
+	font-family: "microsoft yahei";
+	/*color: #546c84;*/
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+a:focus {
+	outline: none;
+	outline-offset: 0;
+}
+.data-fontcolor{
+	color: white;
+}
+btn:focus {
+	outline: none;
+	outline-offset: 0;
+}
+
+.main-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.interval-bottom {
+	height: 35px
+}
+
+.table-title {
+	margin-top: 5px;
+	padding: 8px;
+	font-size: 18px;
+	background-color: #0078D7;
+	color: #fff;
+}
+
+.table-title label {
+	margin-bottom: 0;
+	line-height: 34px;
+}
+
+.search {
+	border: 1px solid #ccc;
+	background-color: #F4F5F7;
+	padding: 15px;
+	position: relative;
+}
+
+.search .date-left {
+	display: inline-block;
+	width: 238px;
+	vertical-align: middle;
+}
+
+.btn-search {
+	width: 120px;
+}
+
+
+/*bootstrap-table调整样式CSS*/
+
+.table-container {
+	position: absolute;
+	bottom: 30px;
+	top: 127px;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.bootstrap-table .table thead>tr>th {
+	background-color: #E0E7ED;
+}
+
+.fixed-table-pagination {
+	overflow: hidden;
+	background-color: #E8EDF1;
+	padding: 5px;
+	margin: 0;
+}
+
+.fixed-table-pagination .pagination-detail,
+.fixed-table-pagination div.pagination {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.pagination {
+	height: 34px;
+}
+
+.bootstrap-table {
+	height: 100%;
+}
+
+.fixed-table-container {
+	height: 100%;
+}
+
+.fixed-table-body {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 42px;
+	bottom: 0px;
+	height: auto;
+}
+
+.fixed-table-pagination {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+/*翻页*/
+
+.custom-pagination {
+	height: 30px;
+	padding: 3px;
+	text-align: right;
+}
+
+.table>tbody>tr>td {
+	vertical-align: middle;
+}
+
+.total {
+	border-color: #2e6da4;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 8px;
+}

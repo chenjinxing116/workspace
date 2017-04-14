@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>修改新采集工作站</title>
+		<link rel="stylesheet" type="text/css" href="../../../uilibs/bootstrap-3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../uilibs/bootstrap-table/bootstrap-table.min.css" />
+		<link href="css/addCjgzz.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div style="text-align: center">
+			<div class="row">
+				<div class="fixrow">
+					<label>工作站名称：</label>
+					<input class="form-control to_fixblock" id="wsName">
+				</div>
+				<div class="fixrow">
+					<label>&#12288;所属部门：</label>
+					<input class="form-control to_fixblock" id="departmen" readonly>
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;&#12288;IP地址：</label>
+					<input class="form-control to_fixblock" id="ipAddr" readonly>
+				</div>
+				<div class="fixrow">
+					<label>&#12288;&#12288;负责人：</label>
+					<input class="form-control to_fixblock" id="admin">
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;联系电话：</label>
+					<input class="form-control to_fixblock" id="phoneNumber">
+				</div>
+				<div class="fixrow">
+					<label>工作站地址：</label>
+					<input class="form-control to_fixblock" id="wsAddr">
+				</div>
+			</div>
+		</div>
+
+		<div style="margin-top: 25px;text-align: center">
+			<button class="btn" id="modify">确定</button>
+			<button class="btn" id="close">取消</button>
+		</div>
+
+		<script src="../../../uilibs/gosunchMap/gis/jsLib/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../uilibs/bootstrap-3.3.5/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/modifyCjgzz.js"></script>
+	</body>
+
+</html>

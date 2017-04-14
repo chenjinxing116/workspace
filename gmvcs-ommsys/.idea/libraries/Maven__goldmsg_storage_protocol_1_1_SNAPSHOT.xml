@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: goldmsg:storage-protocol:1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/storage-protocol/1.1-SNAPSHOT/storage-protocol-1.1-20161226.072702-81.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/storage-protocol/1.1-SNAPSHOT/storage-protocol-1.1-20161226.072702-81-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/storage-protocol/1.1-SNAPSHOT/storage-protocol-1.1-20161226.072702-81-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

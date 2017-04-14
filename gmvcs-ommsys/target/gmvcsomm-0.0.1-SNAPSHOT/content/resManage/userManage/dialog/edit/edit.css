@@ -1,0 +1,52 @@
+* {
+	/*padding:0px;
+    margin:0px;*/
+	font-family: "microsoft yahei";
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 500px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.to_margin {
+	margin-top: 10px;
+}
+
+.footer{
+	text-align: center;
+	padding: 10px;
+}
+
+
+.btn_1 {
+	width: 100px;
+	height: 30px;
+	background-color: #1b9bfe;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.data-left{
+	display: inline-block;
+	width: 200px;
+	vertical-align: middle;
+}

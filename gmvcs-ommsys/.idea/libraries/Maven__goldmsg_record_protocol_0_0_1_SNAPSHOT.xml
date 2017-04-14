@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: goldmsg:record-protocol:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/record-protocol/0.0.1-SNAPSHOT/record-protocol-0.0.1-20161219.014558-60.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/record-protocol/0.0.1-SNAPSHOT/record-protocol-0.0.1-20161219.014558-60-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/record-protocol/0.0.1-SNAPSHOT/record-protocol-0.0.1-20161219.014558-60-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: goldmsg:message-channel:1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/message-channel/1.1-SNAPSHOT/message-channel-1.1-20160928.022604-4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/message-channel/1.1-SNAPSHOT/message-channel-1.1-20160928.022604-4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/message-channel/1.1-SNAPSHOT/message-channel-1.1-20160928.022604-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

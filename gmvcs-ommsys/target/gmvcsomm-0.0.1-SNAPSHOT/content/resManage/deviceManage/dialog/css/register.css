@@ -1,0 +1,69 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/*padding:10px;*/
+	overflow: hidden;
+	min-width: 600px;
+}
+
+label {
+	font-size: 14px;
+	color: #526d82;
+	font-family: "microsoft yahei";
+}
+
+.top {
+	margin: 2px;
+	padding: 10px;
+	background-color: #E0E7ED;
+	border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.btn {
+	width: 100px;
+	height: 30px;
+	background-color: #1b9bfe;
+	color: #FFFFFF;
+	font-family: "microsoft yahei";
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+/*   //整理的样式CSS*/
+
+.row_1 {
+	margin: -5px;
+	text-align: center;
+}
+
+.to_bigrow {
+	text-align: left;
+	margin-top: "10px";
+}
+
+.to_de_id {
+	margin: 20px;
+	text-align: center;
+}
+
+.to_block {
+	display: inline-block;
+	width: 280px;
+}
+
+.to_select {
+	width: 170px;
+	display: inline-block;
+}
+
+.to_cpxh {
+	margin: 20px;
+	width: 280px;
+	margin-left: 73px;
+}

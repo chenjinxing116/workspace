@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+   		http://www.springframework.org/schema/beans/spring-beans.xsd
+   		http://www.springframework.org/schema/aop
+   		http://www.springframework.org/schema/aop/spring-aop.xsd
+   		http://www.springframework.org/schema/context 
+   		http://www.springframework.org/schema/context/spring-context.xsd 
+   		http://www.springframework.org/schema/tx 
+	    http://www.springframework.org/schema/tx/spring-tx.xsd 
+     	http://www.springframework.org/schema/data/jpa 
+     	http://www.springframework.org/schema/data/jpa/spring-jpa.xsd"
+	default-autowire="byName">
+	<!-- Spring的配置文件 -->
+	<!-- 扫描repository包，创建代理接口实例,将带有注解的类纳入spring容器管理 -->
+	<context:component-scan base-package="com.goldmsg.gmomm.controller" />
+	<context:component-scan base-package="com.goldmsg.gmomm.interceptor" />
+	<context:component-scan base-package="com.goldmsg.gmomm.system" />
+	<context:component-scan base-package="com.goldmsg.gmomm.utils" />
+
+	<!-- 读取资源文件 ，引入配置文件 -->
+	<!-- <bean id="propertiesReader" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+		<property name="location"> <value>file:${gmvcsPropPath}</value> </property> 
+		<property name="ignoreUnresolvablePlaceholders"> <value>true</value> </property> 
+		<property name="fileEncoding" value="utf-8" /> </bean> -->
+
+	<bean id="globalReader"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>file:${gmvcsPropPath}</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="UTF-8" />
+	</bean>
+
+	<bean id="errorCodeReader"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>file:${gmvcsSysCodePath}</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="UTF-8" />
+	</bean>
+
+	<bean id="localPropertiesReader"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>classpath:application.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8"></property>
+		<property name="maxUploadSize" value="10485760000"></property>
+		<property name="maxInMemorySize" value="40960"></property>
+	</bean>
+
+	<bean id="props" class="com.goldmsg.gmomm.system.ApplicationProperties" />
+
+	<bean id="errorCode" class="com.goldmsg.gmomm.system.SystemCode" />
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+</beans>

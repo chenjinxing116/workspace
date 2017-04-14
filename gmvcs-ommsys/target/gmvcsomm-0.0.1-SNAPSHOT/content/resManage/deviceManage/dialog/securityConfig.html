@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>安全配置</title>
+		<link rel="stylesheet" type="text/css" href="/front-resource/bootstrap-3.3.5/css/bootstrap.min.css" />
+		<link href="css/securityConfig.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="row to_m">
+			<input type="checkbox" id="deviceControlPolicy">设备控制策略
+		</div>
+		<div class="row">
+			<div class="row_2">
+				<div class="fixwidth" style="width: 130px;"><input type="checkbox" id="bluetooth">蓝牙设备</div>
+				<div class="fixwidth"><input type="checkbox" id="cdDriver">光驱设备</div>
+				<div class="fixwidth"><input type="checkbox" id="modem">调制解调器</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row_2">
+				<div class="fixwidth" style="width: 130px;"><input type="checkbox" id="usb">USB存储设备</div>
+				<div class="fixwidth"><input type="checkbox" id="keyboard">USB键盘</div>
+			</div>
+		</div>
+		<div class="row" style="color: #3B6B8F;">
+			<input type="checkbox" id="exportPolicy">导出策略
+		</div>
+		<div class="row">
+			<div class="row">
+				<div class="row_4">
+					<div class="fixwidth_1"><input type="checkbox" id="nUSBExport">允许普通U盘导出</div>
+					<div class="fixwidth_1"><input type="checkbox" id="sUSBExport">允许公安U盘导出</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row_4">
+					网络控制策略
+				</div>
+			</div>
+			<div class="row">
+				<div class="row_4">
+					<div class="fixwidth_1"><input type="radio" name="enable" id="start">启用</div>
+					<div class="fixwidth_1"><input type="radio" name="enable" id="ban">禁用</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row_4">
+					进程管理策略（白名单）
+				</div>
+			</div>
+			<div class="row">
+				<div class="row_4">
+					<input class="process_input" id="whiteList" placeholder="&#12288;进程名称以”,“隔开">
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align: center;">
+			<div style="margin-top: 25px">
+				<button class="btn" id="modify">确定</button>
+				<button class="btn" id="close">取消</button>
+			</div>
+		</div>
+	</body>
+
+	<script src="/front-resource/gosunchMap/gis/jsLib/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/front-resource/bootstrap-3.3.5/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="/front-resource/es5shim/es5-shim.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/front-resource/zTree_v3/js/jquery.ztree.all.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="/front-resource/orgDropdown/bootstrap-orgSelector.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="/front-resource/gmTools/common/js/publicFunction.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/securityConfig.js"></script>
+
+</html>

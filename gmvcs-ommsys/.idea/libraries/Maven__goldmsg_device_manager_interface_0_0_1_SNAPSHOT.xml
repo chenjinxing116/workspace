@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: goldmsg:device-manager-interface:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/device-manager-interface/0.0.1-SNAPSHOT/device-manager-interface-0.0.1-20161219.014537-120.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/device-manager-interface/0.0.1-SNAPSHOT/device-manager-interface-0.0.1-20161219.014537-120-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/device-manager-interface/0.0.1-SNAPSHOT/device-manager-interface-0.0.1-20161219.014537-120-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,38 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "microsoft yahei";
+}
+body {
+	text-align: center;
+	min-width: 600px;
+	overflow: hidden;
+}
+
+label {
+	font-size: 14px;
+	color: #526d82;
+	width: 95px;
+}
+
+.fixrow {
+	width: 300px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.btn {
+	width: 100px;
+	height: 30px;
+	background-color: #1b9bfe;
+	color: #FFFFFF;
+	font-family: "microsoft yahei";
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.to_fixblock {
+	width: 200px;
+	display: inline-block;
+}

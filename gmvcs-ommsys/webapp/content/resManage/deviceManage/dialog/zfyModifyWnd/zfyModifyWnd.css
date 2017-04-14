@@ -1,0 +1,68 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "microsoft yahei";
+}
+
+html,
+body {
+	text-align: center;
+	width: 100%;height: 100%;
+	overflow: hidden;
+}
+
+.main-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 400px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+label {
+	font-size: 14px;
+	color: #526d82;
+}
+
+.date-left {
+	display: inline-block;
+	width: 240px;
+	vertical-align: middle;
+}
+
+.btn_1 {
+	width: 100px;
+	height: 30px;
+	background-color: #1b9bfe;
+	color: #FFFFFF;
+	font-family: "microsoft yahei";
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.to_margin {
+	margin-top: 10px;
+}
+
+.to_select {
+	width: 240px;
+	display: inline-block;
+}
+
+
+/*部门树样式CSS*/
+
+.department {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+

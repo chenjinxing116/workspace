@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: goldmsg:data-manager-interface:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/data-manager-interface/0.0.1-SNAPSHOT/data-manager-interface-0.0.1-20161219.014659-334.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/data-manager-interface/0.0.1-SNAPSHOT/data-manager-interface-0.0.1-20161219.014659-334-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/goldmsg/data-manager-interface/0.0.1-SNAPSHOT/data-manager-interface-0.0.1-20161219.014659-334-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

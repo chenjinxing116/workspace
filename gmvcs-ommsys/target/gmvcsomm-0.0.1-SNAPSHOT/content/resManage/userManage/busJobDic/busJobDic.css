@@ -1,0 +1,260 @@
+* {
+	font-family: "microsoft yahei";
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+.main-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 1080px;
+	padding: 10px;
+	overflow: auto;
+}
+
+
+/*模块一*/
+
+.page-title {
+	padding: 8px;
+	font-size: 18px;
+	background-color: #0078D7;
+	color: #fff;
+}
+
+
+/*模块二*/
+
+.type-add {
+	padding: 10px;
+}
+
+.type-input {
+	width: 180px;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+
+.type-btn {
+	background-color: #0078D7;
+	width: 80px;
+	color: #fff;
+}
+
+.addJobButtion {
+	display: inline-block;
+	background-color: #0078D7;
+	width: 100px;
+	color: #fff;
+	float: left;
+}
+
+label {
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+}
+
+th {
+	width: 105px;
+}
+
+
+/*模块三*/
+
+.model {
+	width: 100%;
+	/*min-height: 235px;*/
+	display: inline-block;
+}
+
+.model-title {
+	width: 100%;
+	height: 38px;
+	display: inline-block;
+	float: left;
+}
+
+.model-content {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+
+/*左*/
+
+.ywlb {
+	display: inline-block;
+	width: 28%;
+	margin-right: 5px;
+	float: left;
+}
+
+.ywlb-label {
+	color: #0078D7;
+	padding: 8px;
+	font-size: 16px;
+	display: inline-block;
+	float: left;
+	width: 28%;
+}
+
+.ywlb-left {
+	border-top: 1px solid #0078D7;
+	height: 100px;
+	padding-top: 20px;
+	width: 28%;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+
+.jtgl-tool {
+	width: 100%;
+	display: inline-block;
+	background-color: #C0E2FD;
+	color: #0078D7;
+	padding: 3px;
+	border: 1px solid #9BC7EC;
+}
+
+.buttion-div {
+	display: inline-block;
+	float: right;
+}
+
+
+/*右*/
+
+.xgsz {
+	display: inline-block;
+	width: 70%;
+	float: left;
+}
+
+.xgsz-label {
+	color: #0078D7;
+	padding: 8px;
+	font-size: 16px;
+	display: inline-block;
+	float: right;
+	width: 70%;
+}
+
+.xgsz-right {
+	padding-top: 12px;
+	border-top: 1px solid #0078D7;
+	height: 100%;
+	overflow: hidden;
+	width: 70%;
+	display: inline-block;
+	float: right;
+}
+
+.gwlx-tool {
+	min-width: 310px;
+	display: inline-block;
+	background-color: #C0E2FD;
+	color: #0078D7;
+	border: 1px solid #9BC7EC;
+	border-radius: 3px;
+	padding: 2px;
+	font-size: 13px;
+	margin: 3px;
+	float: left;
+}
+
+.btn {
+	padding: 4px 10px;
+}
+
+.gw-type {
+	color: #ff1917;
+	background-color: #FBB1B0;
+	border-color: #f56a6d;
+	margin-left: 5px;
+}
+
+.lx {
+	width: 100%;
+	height: auto;
+	margin: 5px;
+}
+
+.type-label {
+	width: 10%;
+	display: inline-block;
+	float: left;
+}
+
+.sjlx-checkbox {
+	display: inline-block;
+	width: 80%;
+}
+
+.bzlx-checkbox {
+	display: inline-block;
+	width: 80%;
+}
+
+.gw-label {
+	width: 10%;
+	display: inline-block;
+	float: left;
+}
+
+.gangwei {
+	display: inline-block;
+	width: 90%;
+}
+
+.gangwei-content {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.gangwei-buttonAdd {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-left: 3px;
+}
+
+.btn-success {
+	color: #0078d7;
+	background-color: #c0e2fd;
+	border-color: #6BB7F1;
+}
+
+.div-checkbox {
+	display: inline-block;
+	width: 180px;
+	text-align: left;
+	padding-right: 5px;
+}
+
+.div-gangwei {
+	line-height: 31px;
+	color: #526A82;
+}

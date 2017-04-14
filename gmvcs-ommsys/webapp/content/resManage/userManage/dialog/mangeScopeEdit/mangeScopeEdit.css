@@ -1,0 +1,82 @@
+* {
+	/*padding:0px;
+    margin:0px;*/
+	font-family: "microsoft yahei";
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.main-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+	padding: 10px;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+
+/*用户管理 范围树样式CSS*/
+
+.menuContainer {
+	position: absolute;
+	/*top: 34px;*/
+	left: 28px;
+	width: 315px;
+	height: 278px;
+	overflow: auto;
+	/*border: 1px solid #CCCCCC;*/
+	z-index: 99;
+	background-color: #FFF;
+}
+
+.userScope {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.ztree li span.button {
+	margin-top: 0px;
+}
+
+.ztree-police li span.button.ico_close {
+	background: url(../../../../common/images/dis_node_police.png) no-repeat scroll;
+}
+
+.to_margin {
+	margin: 15px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+.btn_1 {
+	width: 100px;
+	height: 30px;
+	background-color: #1b9bfe;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.date-left {
+	display: inline-block;
+	width: 202px;
+	vertical-align: middle;
+}

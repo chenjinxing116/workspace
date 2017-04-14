@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+		<title>修改新采集工作站</title>
+		<link rel="stylesheet" type="text/css" href="/front-resource/bootstrap-3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/front-resource/bootstrap-table/bootstrap-table.min.css" />
+		<link rel="stylesheet" type="text/css" href="/front-resource/zTree_v3/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="/front-resource/gmTools/common/css/tree.css" />
+		<link href="modifyCjgzz-alter.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div style="text-align: center;">
+			<div class="row">
+				<div class="fixrow">
+					<label style="float: left;margin-top: 7px;">&#12288;所属部门：</label>
+					<div class="date-left" id="alter_depart" style="position: relative;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;&#12288;&#12288;厂商：</label>
+					<select class="form-control to_select" id="manufacturers"></select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>工作站名称：</label>
+					<input class="form-control to_fixblock" id="wsName" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;上级存储：</label>
+					<select class="form-control to_fixblock" id="storageId"></select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;&#12288;负责人：</label>
+					<input class="form-control to_fixblock" id="admin" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;联系电话：</label>
+					<input class="form-control to_fixblock" id="phone" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>工作站地址：</label>
+					<input class="form-control to_fixblock" id="addr" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="fixrow">
+					<label>&#12288;工作站IP：</label>
+					<input class="form-control to_fixblock" id="ip" >
+				</div>
+			</div>
+		</div>
+
+		<div style="margin-top: 25px;text-align: center">
+			<button class="btn-css" id="modify">确定</button>
+			<button class="btn-css" id="close">取消</button>
+		</div>
+
+		<script src="/front-resource/jquery/jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/front-resource/bootstrap-3.3.5/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--[if lte IE 8]>
+			<script src="/front-resource/es5shim/es5-shim.min.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+		
+		<script src="/front-resource/zTree_v3/js/jquery.ztree.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/front-resource/orgDropdown/bootstrap-orgSelector.js" type="text/javascript" charset="utf-8"></script>
+		<script src="modifyCjgzz-alter.js"></script>
+	</body>
+
+</html>
