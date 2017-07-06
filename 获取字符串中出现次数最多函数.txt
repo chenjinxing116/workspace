@@ -1,0 +1,14 @@
+今天的题目，有空的挑战一下，代码直接发群里边，有疑问的交流讨论一下。
+判断一个字符串中出现次数最多的字符，统计这个次数
+/*var str = 'asdfssaaasasasasaa';
+
+function getMaxChar(str){
+var map={};
+for(let i=0,len=str.length;i<len;i++){
+ if(map[str[i]]){map[str[i]]++;}else{map[str[i]]=1;}
+}
+
+var max=0,maxKey;
+for(let key in map){if(map[key]>max){maxKey=key;max=map[key];}}
+return {max,maxKey};
+}
