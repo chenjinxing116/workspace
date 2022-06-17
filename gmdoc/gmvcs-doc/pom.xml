@@ -9,7 +9,7 @@
 		<junit.version>4.11</junit.version>
 		<org.springframework.version>4.1.4.RELEASE</org.springframework.version>
 		<hessian.version>4.0.7</hessian.version>
-		<fastjson.version>1.2.7</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 	</properties>
 
 	<modelVersion>4.0.0</modelVersion>
