@@ -7,7 +7,7 @@
 		<project.build.locales>zh_CN</project.build.locales>
 		<project.build.jdk>1.7</project.build.jdk>
 
-		<org.springframework.version>4.1.4.RELEASE</org.springframework.version>
+		<org.springframework.version>4.2.7.RELEASE</org.springframework.version>
 		<hessian.version>4.0.7</hessian.version>
 	</properties>
 
